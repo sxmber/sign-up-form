@@ -115,6 +115,73 @@ input[type="password"]:valid,
 input[type="number"]:valid{
     font-weight: 700;
 }
+
+#nameError {
+    display:none;
+}
+#nameError.visible {
+    display: block;
+    position: absolute;
+    bottom: 56%;
+    font-size: .7em;
+    color: red;
+}
+
+#lastNameError {
+    display:none;
+}
+
+#lastNameError.visible{
+    display: block; 
+    position: absolute;
+    font-size: .7em;
+    color:red;
+    bottom: 56%;
+}
+
+#emailError {
+    display: none;
+}
+
+#emailError.visible {
+    display: block;
+    position: absolute;
+    font-size: .7em;
+    color: red;
+    bottom: 37%;
+}
+
+#phoneError {
+    display: none;
+}
+#phoneError.visible{
+    display: block;
+    position: absolute;
+    font-size: .7em;
+    color: red;
+    bottom: 37%;
+}
+#passwordError {
+    display: none;
+}
+#passwordError.visible {
+    display: block;
+    position: absolute;
+    font-size: .7em;
+    color: red;
+    bottom: 18%;
+}
+
+#confirmPasswordError {
+    display: none;
+}
+#confirmPasswordError.visible {
+    display: block;
+    position: absolute;
+    font-size: .7em;
+    color: red;
+    bottom: 18%;
+}
 /* Removes the up and down arrows on number inputs */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

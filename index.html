@@ -24,15 +24,17 @@
                 <p>Be prepared for the adventure of your life!</p>
             </div>
             
-            <form action="/" class="forminput" method="post">
+            <form action="/index.html" class="forminput" method="post">
                 <div class="row">
                     <div class="input-group">
                     <label for="firstName"></label>
-                    <input  required type="text" id="firstName" name="name" placeholder="FIRST NAME">
+                    <input required type="text" id="firstName" name="name" placeholder="FIRST NAME">
+                    <span id="nameError" aria-hidden="true">*This field is required</span>
                     </div>
                     <div class="input-group">
                         <label for="lastName"></label>
                         <input required type="text" id="lastName" name="lastName" placeholder="LAST NAME">
+                        <span id="lastNameError" aria-hidden="true">*This field is required</span>
                     </div>
                     
                 </div>
@@ -41,10 +43,12 @@
                     <div class="input-group">
                         <label for="email"></label>
                         <input required type="email" id="email" name="email" placeholder="EMAIL">
+                        <span id="emailError" aria-hidden="true">*This field is required</span>
                     </div>
                     <div class="input-group">
                         <label for="tel"></label>
                         <input required type="number" id="tel" name="tel" placeholder="PHONE">
+                        <span id="phoneError" aria-hidden="true">*This field is required</span>
                     </div>
                     
                 </div>
@@ -52,17 +56,19 @@
                     <div class="input-group">
                         <label for="password"></label>
                     <input required type="password" id="password" name="password" placeholder="PASSWORD">
+                    <span id="passwordError" aria-hidden="true">*This field is required</span>
                     </div>
                     <div class="input-group">
                         <label for="confirmPassword"></label>
                     <input required type="password" id="confirmPassword" name="password" placeholder="CONFIRM PASSWORD">
+                    <span id="confirmPasswordError" aria-hidden="true">*This field is required</span>
                     </div>
                 </div>
-                <button type="submit" value="submit">Create Account</button>
+                <button id="submit"type="submit" value="submit">Create Account</button>
             </form>
             
         </div>
     </div>
-    
+    <script src="app.js"></script>
 </body>
 </html>
