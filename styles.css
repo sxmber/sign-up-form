@@ -58,16 +58,15 @@ input[type="email"],
 input[type="password"],
 input[type="number"]{
     background-color: #A2C5F9;
-    /* color: #569593; */
     color: grey;
     border: none;
     border-bottom: solid white 1px;
-    border-right: solid white 1px;
     border-radius: 2px;
-    /* height: 30px; */
     height: 80%;
     padding: 8px;
-    transition: transform .1s ease-in-out;
+    transition: transform .2s ease-in;
+    transition: background-color .2s ease-in;
+    transform: border-left 5s ease-in;
     
 }
 
@@ -75,10 +74,13 @@ input[type="number"]{
 input:focus{
     transform: translateX(-2px) translateY(-2px);
     outline: none;
-    box-shadow: 2px 2px 2px black;
+    box-shadow: 2px 2px 2px rgb(71, 71, 71);
     border: none;
     border-left: solid white 1px;
     border-top: solid white 1px;
+    background-color: #738785;
+    color: white;
+    
 }
 .row {
     display: flex;
@@ -91,6 +93,30 @@ input:focus{
 label[for="confirmPassword"]{
     white-space: nowrap;
 }
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder,
+input[type="number"]::placeholder {
+    color: #435655;
+    font-weight:550;
+}
+
+input[type="text"]:focus::placeholder,
+input[type="email"]:focus::placeholder,
+input[type="password"]:focus::placeholder,
+input[type="number"]:focus::placeholder {
+    color: white;
+}
+/* Removes the up and down arrows on number inputs */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.sidebar > h1 {
+    margin-left: 10px;
+}
 button {
     align-self: center;
     min-width: 200px;
@@ -98,6 +124,7 @@ button {
     border-radius: 0;
     border: none;
     transition: background-color .2s;
+    font-weight: 850;
 }
 button:hover{
     background-color: #569593;
