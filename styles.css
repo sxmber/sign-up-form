@@ -99,7 +99,7 @@ input[type="email"]::placeholder,
 input[type="password"]::placeholder,
 input[type="number"]::placeholder {
     color: #435655;
-    font-weight:550;
+    font-weight:700;
 }
 
 input[type="text"]:focus::placeholder,
@@ -107,6 +107,13 @@ input[type="email"]:focus::placeholder,
 input[type="password"]:focus::placeholder,
 input[type="number"]:focus::placeholder {
     color: white;
+    
+}
+input[type="text"]:valid,
+input[type="email"]:valid,
+input[type="password"]:valid,
+input[type="number"]:valid{
+    font-weight: 700;
 }
 /* Removes the up and down arrows on number inputs */
 input::-webkit-outer-spin-button,
