@@ -3,8 +3,11 @@
     margin: 0;
     padding: 0;
     font-family: 'Anuphan', sans-serif;
+    
 }
-
+html {
+    font-size: 17px;
+}
 .container {
     height: 100vh;
     display: flex;
@@ -31,6 +34,7 @@
 .header {
     text-align: center;
     margin: 20px;
+    
 }
 
 .forminput {
@@ -45,7 +49,7 @@
     display: flex;
     flex-direction: column;
     margin: 40px;
-    font-size: 1rem;
+    font-size: 1.2em;
 
 }
 
@@ -54,20 +58,49 @@ input[type="email"],
 input[type="password"],
 input[type="number"]{
     background-color: #A2C5F9;
-    color: #569593;
+    /* color: #569593; */
+    color: grey;
     border: none;
-    box-shadow: 2px 2px 5px black;
-    border-radius: 3px;
-    height: 30px;
+    border-bottom: solid white 1px;
+    border-right: solid white 1px;
+    border-radius: 2px;
+    /* height: 30px; */
+    height: 80%;
     padding: 8px;
+    transition: transform .1s ease-in-out;
+    
 }
 
+
 input:focus{
+    transform: translateX(-2px) translateY(-2px);
     outline: none;
+    box-shadow: 2px 2px 2px black;
+    border: none;
+    border-left: solid white 1px;
+    border-top: solid white 1px;
 }
 .row {
     display: flex;
+    overflow: hidden;
 }
 .ranger {
     max-height: 550px;
+}
+
+label[for="confirmPassword"]{
+    white-space: nowrap;
+}
+button {
+    align-self: center;
+    min-width: 200px;
+    height: 35px;
+    border-radius: 0;
+    border: none;
+    transition: background-color .2s;
+}
+button:hover{
+    background-color: #569593;
+    color: white;
+    cursor: pointer;
 }
