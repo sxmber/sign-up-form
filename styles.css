@@ -116,6 +116,22 @@ input[type="number"]:valid{
     font-weight: 700;
 }
 
+input[type="text"]:valid:focus,
+input[type="email"]:valid:focus,
+input[type="password"]:valid:focus,
+input[type="number"]:valid:focus{
+    border-left: green solid 2px;
+    border-top: green solid 2px;
+}
+
+input[type="text"]:invalid:focus,
+input[type="email"]:invalid:focus,
+input[type="password"]:invalid:focus,
+input[type="number"]:invalid:focus{
+    border-left: red solid 2px;
+    border-top: red solid 2px;
+}
+
 #nameError {
     display:none;
 }
@@ -191,7 +207,7 @@ input::-webkit-inner-spin-button {
 .sidebar > h1 {
     margin-left: 10px;
 }
-button {
+#submit {
     align-self: center;
     min-width: 200px;
     height: 35px;
@@ -200,7 +216,7 @@ button {
     transition: background-color .2s;
     font-weight: 850;
 }
-button:hover{
+#submit:hover{
     background-color: #569593;
     color: white;
     cursor: pointer;

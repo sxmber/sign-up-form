@@ -24,7 +24,7 @@
                 <p>Be prepared for the adventure of your life!</p>
             </div>
             
-            <form action="/index.html" class="forminput" method="post">
+            <form class="forminput" method="post">
                 <div class="row">
                     <div class="input-group">
                     <label for="firstName"></label>
@@ -55,16 +55,17 @@
                 <div class="row">
                     <div class="input-group">
                         <label for="password"></label>
-                    <input required type="password" id="password" name="password" placeholder="PASSWORD">
+                    <input required type="password" id="password" name="password" placeholder="PASSWORD" minlength="8">
                     <span id="passwordError" aria-hidden="true">*This field is required</span>
                     </div>
                     <div class="input-group">
                         <label for="confirmPassword"></label>
-                    <input required type="password" id="confirmPassword" name="password" placeholder="CONFIRM PASSWORD">
+                    <input required type="password" id="confirmPassword" name="password" placeholder="CONFIRM PASSWORD" minlength="8">
                     <span id="confirmPasswordError" aria-hidden="true">*This field is required</span>
                     </div>
                 </div>
-                <button id="submit"type="submit" value="submit">Create Account</button>
+                <!-- <button id="submit"type="submit" value="submit">Create Account</button> -->
+                <input type="submit" id="submit" value="Create Account">
             </form>
             
         </div>

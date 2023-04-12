@@ -32,12 +32,17 @@ const nameError = document.getElementById("nameError"),
             passwordError.textContent = "Passwords do not match";
             confirmPasswordError.classList.add("visible");
             confirmPasswordError.textContent = "Passwords do not match"
-        } 
+        } else {
+            passwordError.classList.remove("visible");
+            passwordError.textContent = "*This field is required";
+            confirmPasswordError.classList.remove("visible");
+            confirmPasswordError.textContent = "*This field is required"
+        }
         
     }
 
 submitBtn.addEventListener('click', (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     checkPasswordMatch();
 })
 // nameError.classList.add("visible");
